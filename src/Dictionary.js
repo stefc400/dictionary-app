@@ -7,7 +7,6 @@ export default function Dictionary() {
   const [results, setResults] = useState(null);
   function handleResponse(response) {
     setResults(response.data[0]);
-    console.log(response.data[0].meanings[0].definitions[0].definition);
   }
   function search(event) {
     event.preventDefault();
